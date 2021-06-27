@@ -1,0 +1,15 @@
+#project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-widget {
+    height: 40vh;
+    width: 40vw;
+}
+
+iframe {
+    border: none;
+}
