@@ -16,10 +16,10 @@ const Projects = () => {
         <>
             <div className='container'>
                 <h1>Projects</h1>
-                {projects.map(project => (
-                    <div id="project-container">
+                {projects.map((project, index) => (
+                    <div id="project-container" key={index}>
                         <h3>{project.name}</h3>
-                        <iframe src={project.url} class="project-widget"></iframe>
+                        <iframe src={project.url} className="project-widget"></iframe>
                     </div>
                 ))}
             </div>
