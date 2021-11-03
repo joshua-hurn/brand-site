@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import DocumentHead from '../components/Head';
 
 const Projects = () => {
     const [projects, setProjects] = useState([
@@ -14,10 +15,12 @@ const Projects = () => {
 
     return (
         <>
+            <DocumentHead />
+
             <div className='container'>
                 <h1>Projects</h1>
                 {projects.map((project, index) => (
-                    <div id="project-container" key={index}>
+                    <div className="project-container" key={index}>
                         <h3>{project.name}</h3>
                         <iframe src={project.url} className="project-widget"></iframe>
                     </div>
@@ -27,4 +30,4 @@ const Projects = () => {
     )
 }
 
-export default Projects;
+export default Projects
