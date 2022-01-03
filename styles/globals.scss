@@ -1,13 +1,12 @@
-@import "./variables.scss";
+@import "./includes/typography.scss";
+@import "./includes/variables.scss";
 @import "./projects.scss";
 
 html,
 body {
   padding: 0;
   margin: 0;
-  background-color: $color-primary;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Lemon Milk", sans-serif;
 }
 
 * {
@@ -21,6 +20,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-rendering: optimizeLegibility;
 }
 
 code {
@@ -31,10 +31,41 @@ code {
 }
 
 .container {
+  background-image: url("../public/assets/images/background.svg");
+  background-size: 100% 100%;
   position: relative;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0.5rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+a,
+p {
+  // background: inherit;
+  // background-clip: text;
+  // -webkit-background-clip: text;
+  // color: transparent;
+  // filter: invert(1) grayscale(1);
+  // -webkit-filter: invert(1) grayscale(1);
 }
