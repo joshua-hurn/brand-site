@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import DocumentHead from '../components/Head';
 
 const About = () => {
-
     return (
         <>
             <DocumentHead />
