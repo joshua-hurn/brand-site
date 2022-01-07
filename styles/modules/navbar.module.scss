@@ -1,7 +1,21 @@
 .navbar {
+    padding: 0.5em 1em;
+
     .linkContainer {
         a {
             color: black !important;
+        }
+
+        svg {
+            cursor: pointer;
+        }
+        
+        div {
+            display: inline-block !important;
+
+            a {
+                font-size: 1em !important;
+            }
         }
     }
 }
