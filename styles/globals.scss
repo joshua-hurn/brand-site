@@ -10,8 +10,8 @@ body {
 
 body {
   background-image: url("../public/assets/images/background.svg");
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 * {
@@ -25,7 +25,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-rendering: optimizeLegibility;
 }
 
 // .container-fluid {
@@ -52,22 +51,28 @@ code {
   }
 }
 
+h1 {
+  color: white;
+  text-shadow: 1px 1px #000000;
+}
+
 a {
   text-decoration: none;
   margin: 0.5rem;
+  text-shadow: 1px 1px #000000;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-h1,
-a,
-p {
-  // background: inherit;
-  // background-clip: text;
-  // -webkit-background-clip: text;
-  // color: transparent;
-  // filter: invert(1) grayscale(1);
-  // -webkit-filter: invert(1) grayscale(1);
-}
+// h1,
+// a,
+// p {
+// background: inherit;
+// background-clip: text;
+// -webkit-background-clip: text;
+// color: transparent;
+// filter: invert(1) grayscale(1);
+// -webkit-filter: invert(1) grayscale(1);
+// }

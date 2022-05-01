@@ -1,13 +1,17 @@
 .navbar {
     padding: 0.5em 1em;
-
+    
     .linkContainer {
+        color: #23226b !important;
+
         a {
-            color: black !important;
+            // color: black !important;
+            text-shadow: none;
         }
 
-        svg {
+        .navbar-brand {
             cursor: pointer;
+            height: 1.4em;
         }
         
         div {

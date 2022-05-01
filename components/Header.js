@@ -12,7 +12,7 @@ export default function Header({ title }) {
       <h1 className="title">{title}</h1>
       {links.map((link, index) => (
         <Link href={"/" + link} key={index}>
-          <a>{link}</a>
+          <a className="text-white">{link}</a>
         </Link>
       ))}
     </>
