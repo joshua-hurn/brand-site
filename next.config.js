@@ -5,12 +5,11 @@ module.exports = {
         FONTAWESOME_NPM_AUTH_TOKEN: process.env.FONTAWESOME_NPM_AUTH_TOKEN
     },
     generateBuildId: async () => {
-        let id;
-        
-        require('child_process').exec('git rev-parse HEAD', function (err, stdout) {
-            id = stdout
-        });
-        
-        return id
+        const rev = fs.readFileSync('.git/HEAD').toString().trim();
+        if (rev.indexOf(':') === -1) {
+            return rev;
+        } else {
+            return fs.readFileSync('.git/' + rev.substring(5)).toString().trim();
+        }
     },
 };
