@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/modules/header.module.scss";
 
-const Header = ({ title }) => {
+const Header = () => {
   const [links] = useState([
     "projects",
     "about"

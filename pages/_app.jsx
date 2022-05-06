@@ -9,7 +9,8 @@ library.add(faHome);
 
 function Application({ Component, pageProps }) {
   useEffect(() => {
-    import("bootstrap/dist/js/bootstrap");
+    import("bootstrap/dist/css/bootstrap.css");
+    console.log('Application.jsx: useEffect');
   }, []);
 
   return <Component {...pageProps} />
