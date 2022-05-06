@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import DocumentHead from '../components/Head';
-import Navbar from "../components/Navbar";
-import Footer from '../components/Footer';
+import Layout from "../components/Layout";
 import styles from "../styles/modules/projects.module.scss";
 
 const Projects = () => {
@@ -17,10 +15,7 @@ const Projects = () => {
     ]);
 
     return (
-        <>
-            <DocumentHead />
-            <Navbar />
-
+        <Layout title="Projects">
             <main>
                 <div className={styles.pageContainer}>
                     <h1>Projects</h1>
@@ -33,10 +28,8 @@ const Projects = () => {
                     ))}
                 </div>
             </main>
-
-            <Footer />
-        </>
+        </Layout>
     )
 }
 
-export default Projects
+export default Projects;
