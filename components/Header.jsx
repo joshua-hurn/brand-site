@@ -10,7 +10,7 @@ const Header = () => {
   ]);
 
   return (
-    <>
+    <div className="header-wrapper d-flex flex-column align-items-center">
       <h1 className="title d-flex align-items-center">
         <Image src="/assets/icons/bracket-curly-left.svg" width={30} height={60} className={styles.filterCurly}/>
         <span className="m-3">Josh Hurn</span>
@@ -22,7 +22,7 @@ const Header = () => {
           <a className="text-white">{link}</a>
         </Link>
       ))}
-    </>
+    </div>
   )
 }
 
