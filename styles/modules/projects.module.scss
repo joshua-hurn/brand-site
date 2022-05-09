@@ -5,7 +5,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+
+        h3 {
+            color: white;
+        }
 
         .projectWidget {
             height: 30vh;

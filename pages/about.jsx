@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Layout from '../components/Layout';
 
 const About = () => {
@@ -6,7 +5,7 @@ const About = () => {
         <Layout title="About">
             <div className='container'>
                 <h1>About Me</h1>
-                <p>Coming Soon! Feel free to reach out at
+                <p className='text-white'>Feel free to reach out at
                     <a href="mailto:josh@hurn.io">josh@hurn.io</a>
                 </p>
             </div>

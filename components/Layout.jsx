@@ -24,9 +24,9 @@ const Layout = ({
             <div className={styles.wrapper}>
                 <Navbar />
 
-                <div className={styles.content}>
+                <main className={styles.content}>
                     {children}
-                </div>
+                </main>
 
                 <Footer />
             </div>

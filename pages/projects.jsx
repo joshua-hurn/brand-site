@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Layout from "../components/Layout";
 import styles from "../styles/modules/projects.module.scss";
 
@@ -16,18 +16,16 @@ const Projects = () => {
 
     return (
         <Layout title="Projects">
-            <main>
-                <div className={styles.pageContainer}>
-                    <h1>Projects</h1>
+            <div className={styles.pageContainer}>
+                <h1 className="text-center mb-md-5">Projects</h1>
 
-                    {projects.map((project, index) => (
-                        <div className={styles.projectContainer} key={index}>
-                            <h3>{project.name}</h3>
-                            <iframe src={project.url} className={styles.projectWidget}></iframe>
-                        </div>
-                    ))}
-                </div>
-            </main>
+                {projects.map((project, index) => (
+                    <div className={styles.projectContainer} key={index}>
+                        <h3>{project.name}</h3>
+                        <iframe src={project.url} className={styles.projectWidget}></iframe>
+                    </div>
+                ))}
+            </div>
         </Layout>
     )
 }
