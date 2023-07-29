@@ -17,10 +17,13 @@ const Header = () => {
       </h1>
 
       {links.map((link, index) => (
-        <Link href={"/" + link} key={index}>{link}</Link>
+        <Link href={"/" + link} key={index} className="text-white">
+          {link}
+        </Link>
       ))}
     </div>
   )
 }
 
 export default Header;
+// C-66829740
