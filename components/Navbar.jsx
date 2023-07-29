@@ -1,13 +1,14 @@
 import Link from "next/link";
 import styles from "../styles/modules/navbar.module.scss";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Icon from '@mdi/react';
+import { mdiHome } from '@mdi/js';
 
 const Navbar = () => {
   return (
     <nav className={`${styles.navbar} navbar-expand-lg`}>
       <div className={styles.linkContainer}>
         <Link href="/" className="navbar-brand">
-          <FontAwesomeIcon icon={["fas", "home"]} className="mr-2" />
+          <Icon path={mdiHome} size={1} className="mr-2" />
         </Link>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
