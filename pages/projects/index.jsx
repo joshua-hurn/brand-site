@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import Layout from "../components/Layout";
-import styles from "../styles/modules/projects.module.scss";
+import Layout from "@/components/Layout";
+import styles from "@/styles/modules/projects.module.scss";
 
 const Projects = () => {
-  const [projects, setProjects] = useState([
+  const [projects] = useState([
     {
       name: "Basic Square (vanilla JS)",
       url: "https://cranky-noyce-5fb271.netlify.app/"
