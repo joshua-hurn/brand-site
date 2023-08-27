@@ -1,7 +1,7 @@
 import Link from "next/link";
-import styles from "../styles/modules/navbar.module.scss";
 import Icon from '@mdi/react';
 import { mdiHome } from '@mdi/js';
+import styles from "@/styles/modules/navbar.module.scss";
 
 const Navbar = () => {
   return (

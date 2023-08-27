@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
-import styles from "../styles/modules/header.module.scss";
+import styles from "@/styles/modules/header.module.scss";
 
 const Header = () => {
   const [links] = useState([

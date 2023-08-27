@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Navbar from './Navbar';
 import Footer from "./Footer";
-import styles from "../styles/modules/layout.module.scss";
+import styles from "@/styles/modules/layout.module.scss";
 
 const Layout = ({
   children,
