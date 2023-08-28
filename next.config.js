@@ -10,4 +10,8 @@ module.exports = {
             return fs.readFileSync('.git/' + rev.substring(5)).toString().trim();
         }
     },
+    i18n: {
+        locales: ["en"],
+        defaultLocale: "en",
+    },
 };
