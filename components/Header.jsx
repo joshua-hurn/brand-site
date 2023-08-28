@@ -11,9 +11,9 @@ const Header = () => {
   return (
     <div className="header-wrapper d-flex flex-column align-items-center">
       <h1 className="title d-flex align-items-center mb-md-3">
-        <img src="/assets/icons/bracket-curly-left.svg" width={30} height={60} className={styles.filterCurly} />
+        <img src="/assets/icons/bracket-curly-left.svg" alt="curly bracket left for aesthetic only" width={30} height={60} className={styles.filterCurly} />
         <span className="mx-3">Josh Hurn</span>
-        <img src="/assets/icons/bracket-curly-right.svg" width={30} height={60} className={styles.filterCurly} />
+        <img src="/assets/icons/bracket-curly-right.svg" alt="curly bracket right for aesthetic only" width={30} height={60} className={styles.filterCurly} />
       </h1>
 
       {links.map((link, index) => (
