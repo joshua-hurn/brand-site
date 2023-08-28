@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className={`${styles.navbar} navbar-expand-lg`}>
       <div className={styles.linkContainer}>
-        <Link href="/" className="navbar-brand">
+        <Link href="/" aria-label="Home" className="navbar-brand">
           <Icon path={mdiHome} size={1} className="mr-2" />
         </Link>
 
@@ -17,10 +17,6 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            {/* <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" href="/">Home</Link>
-            </li> */}
-
             <li className="nav-item">
               <Link href="/projects" className="nav-link">
                 Projects
