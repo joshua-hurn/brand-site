@@ -17,7 +17,7 @@ const Header = () => {
       </h1>
 
       {links.map((link, index) => (
-        <Link href={"/" + link} key={index} className="text-white">
+        <Link href={"/" + link} key={index} aria-label={link} className="text-white">
           {link}
         </Link>
       ))}
